@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://bunndi5p2kxbh"]
+
+[ext_resource type="Script" uid="uid://bls50tnr7tbei" path="res://scripts/window.gd" id="1_oya5r"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_to7fh"]
+size = Vector2(164, 273)
+
+[node name="Window" type="Node2D" unique_id=1127207918]
+script = ExtResource("1_oya5r")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=736391643]
+offset_right = 164.0
+offset_bottom = 273.0
+mouse_filter = 2
+color = Color(0.65834004, 0.6583399, 0.6583399, 1)
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1740196777]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=249502836]
+position = Vector2(82, 136.5)
+shape = SubResource("RectangleShape2D_to7fh")
