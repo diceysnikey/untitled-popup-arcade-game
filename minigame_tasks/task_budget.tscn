@@ -1,0 +1,203 @@
+[gd_scene format=3 uid="uid://b7cvq8k2uvcoy"]
+
+[ext_resource type="Script" uid="uid://pue7nitftewn" path="res://minigame_tasks/task_budget.gd" id="1_0tesw"]
+[ext_resource type="Texture2D" uid="uid://b60wh6equ8nyc" path="res://textures_and_audios/checkmark.png" id="2_inj3t"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_inj3t"]
+size = Vector2(328, 273)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_24sc2"]
+size = Vector2(34, 6)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0tesw"]
+size = Vector2(40, 7)
+
+[node name="Task_Budget" type="Node2D" unique_id=1479175470]
+process_mode = 3
+script = ExtResource("1_0tesw")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=226447483]
+offset_right = 328.0
+offset_bottom = 273.0
+mouse_filter = 2
+color = Color(0.68963265, 0.8629644, 0.9705463, 1)
+
+[node name="Area2D" type="Area2D" parent="." unique_id=968812089]
+visible = false
+modulate = Color(0.35970744, 0.83901966, 1.540184e-06, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=96044623]
+position = Vector2(164, 136.5)
+shape = SubResource("RectangleShape2D_inj3t")
+
+[node name="Pillar1" type="ColorRect" parent="." unique_id=163799007]
+offset_left = 15.0
+offset_top = 233.0
+offset_right = 55.0
+offset_bottom = 273.0
+color = Color(0.23529412, 1, 1, 1)
+
+[node name="Slider" type="ColorRect" parent="Pillar1" unique_id=1602855852]
+layout_mode = 0
+offset_top = -6.0
+offset_right = 40.0
+offset_bottom = 6.0
+color = Color(0.48178947, 0.48178947, 0.48178947, 1)
+
+[node name="TargetInteracter" type="Area2D" parent="Pillar1" unique_id=172275147 groups=["PillarTargetArea"]]
+
+[node name="ColorRect" type="ColorRect" parent="Pillar1/TargetInteracter" unique_id=130281802]
+offset_left = 3.0
+offset_top = -3.0
+offset_right = 37.0
+offset_bottom = 3.0
+mouse_filter = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Pillar1/TargetInteracter" unique_id=657400862]
+position = Vector2(20, 0)
+shape = SubResource("RectangleShape2D_24sc2")
+
+[node name="Pillar2" type="ColorRect" parent="." unique_id=1453034051]
+offset_left = 93.0
+offset_top = 233.0
+offset_right = 133.0
+offset_bottom = 273.0
+color = Color(1, 1, 0.11372549, 1)
+
+[node name="Slider" type="ColorRect" parent="Pillar2" unique_id=491248561]
+layout_mode = 0
+offset_top = -6.0
+offset_right = 40.0
+offset_bottom = 6.0
+color = Color(0.48178947, 0.48178947, 0.48178947, 1)
+
+[node name="TargetInteracter" type="Area2D" parent="Pillar2" unique_id=1250219922 groups=["PillarTargetArea"]]
+
+[node name="ColorRect" type="ColorRect" parent="Pillar2/TargetInteracter" unique_id=195351227]
+offset_left = 3.0
+offset_top = -3.0
+offset_right = 37.0
+offset_bottom = 3.0
+mouse_filter = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Pillar2/TargetInteracter" unique_id=311789715]
+position = Vector2(20, 0)
+shape = SubResource("RectangleShape2D_24sc2")
+
+[node name="Pillar3" type="ColorRect" parent="." unique_id=1822541170]
+offset_left = 176.0
+offset_top = 233.0
+offset_right = 216.0
+offset_bottom = 273.0
+color = Color(1, 0, 0, 1)
+
+[node name="Slider" type="ColorRect" parent="Pillar3" unique_id=734681130]
+layout_mode = 0
+offset_top = -6.0
+offset_right = 40.0
+offset_bottom = 6.0
+color = Color(0.48178947, 0.48178947, 0.48178947, 1)
+
+[node name="TargetInteracter" type="Area2D" parent="Pillar3" unique_id=90439770 groups=["PillarTargetArea"]]
+
+[node name="ColorRect" type="ColorRect" parent="Pillar3/TargetInteracter" unique_id=134211469]
+offset_left = 3.0
+offset_top = -3.0
+offset_right = 37.0
+offset_bottom = 3.0
+mouse_filter = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Pillar3/TargetInteracter" unique_id=527745094]
+position = Vector2(20, 0)
+shape = SubResource("RectangleShape2D_24sc2")
+
+[node name="Pillar4" type="ColorRect" parent="." unique_id=1394133555]
+offset_left = 260.0
+offset_top = 233.0
+offset_right = 300.0
+offset_bottom = 273.0
+color = Color(0.12156863, 1, 0, 1)
+
+[node name="Slider" type="ColorRect" parent="Pillar4" unique_id=1946005839]
+layout_mode = 0
+offset_top = -6.0
+offset_right = 40.0
+offset_bottom = 6.0
+color = Color(0.48178947, 0.48178947, 0.48178947, 1)
+
+[node name="TargetInteracter" type="Area2D" parent="Pillar4" unique_id=271256707 groups=["PillarTargetArea"]]
+
+[node name="ColorRect" type="ColorRect" parent="Pillar4/TargetInteracter" unique_id=940606048]
+offset_left = 3.0
+offset_top = -3.0
+offset_right = 37.0
+offset_bottom = 3.0
+mouse_filter = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Pillar4/TargetInteracter" unique_id=465343358]
+position = Vector2(20, 0)
+shape = SubResource("RectangleShape2D_24sc2")
+
+[node name="Target1" type="ColorRect" parent="." unique_id=538418346]
+offset_left = 15.0
+offset_right = 55.0
+offset_bottom = 7.0
+mouse_filter = 2
+color = Color(0.15686275, 0.1764706, 0.18039216, 1)
+
+[node name="Area2D" type="Area2D" parent="Target1" unique_id=2057302773]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Target1/Area2D" unique_id=484358892]
+position = Vector2(20, 3.5)
+shape = SubResource("RectangleShape2D_0tesw")
+
+[node name="Target2" type="ColorRect" parent="." unique_id=843079162]
+offset_left = 93.0
+offset_right = 133.0
+offset_bottom = 7.0
+mouse_filter = 2
+color = Color(0.155767, 0.17800295, 0.18021259, 1)
+
+[node name="Area2D" type="Area2D" parent="Target2" unique_id=1603448189]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Target2/Area2D" unique_id=1733555034]
+position = Vector2(20, 3.5)
+shape = SubResource("RectangleShape2D_0tesw")
+
+[node name="Target3" type="ColorRect" parent="." unique_id=1009482456]
+offset_left = 176.0
+offset_right = 216.0
+offset_bottom = 7.0
+mouse_filter = 2
+color = Color(0.155767, 0.17800295, 0.18021259, 1)
+
+[node name="Area2D" type="Area2D" parent="Target3" unique_id=1011121421]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Target3/Area2D" unique_id=835873532]
+position = Vector2(20, 3.5)
+shape = SubResource("RectangleShape2D_0tesw")
+
+[node name="Target4" type="ColorRect" parent="." unique_id=198773438]
+offset_left = 260.0
+offset_right = 300.0
+offset_bottom = 7.0
+mouse_filter = 2
+color = Color(0.155767, 0.17800295, 0.18021259, 1)
+
+[node name="Area2D" type="Area2D" parent="Target4" unique_id=1367654792]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Target4/Area2D" unique_id=1066976966]
+position = Vector2(20, 3.5)
+shape = SubResource("RectangleShape2D_0tesw")
+
+[node name="Blur" type="ColorRect" parent="." unique_id=1868814619]
+visible = false
+offset_right = 328.0
+offset_bottom = 273.0
+color = Color(0.105882354, 0.105882354, 0.105882354, 0.73333335)
+
+[node name="Checkmark" type="Sprite2D" parent="." unique_id=364041636]
+visible = false
+position = Vector2(160, 145)
+scale = Vector2(2.25, 2.25)
+texture = ExtResource("2_inj3t")
